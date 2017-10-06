@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+  
 
 <head>
-  <meta charset="UTF-8">
-  <title>Michael Wallace</title>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Bootstrap Data Visualizations</title>
 </head>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Data Visualizations</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse navbar-light mr-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle navbar-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </button>
+              <div class="dropdown-menu navbar-light" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Cloud Cover</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Temperature</a>
+                <a class="dropdown-item" href="#">Wind</a>
+              </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link navbar-light" href="#">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-light" href="#">Data</a>
+            </li>
+        </ul>
+</nav>
+</div>
 
-<body>
-  <!-- any weird symbols here such as &gt; or &lt; are HTML escape characters. http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php -->
-  <!-- these allow us to do things like write escaped HTML, or HTML that just gets rendered as text in the document -->
- <h1>Michael Wallace</h1>
- <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/09/12/22/Gary_Busey.jpg" style="width:304px;height:228px;">
- <section>
-    <hr>
-    <h2>About Me</h2>
-    <p>
-      I am currently working as a Chemist for the San Francisco Public Utilities Commission.  I analyze finished drinking water to ensure all organic compounds of interest are below the maximum contamination limit.  Luckily the water sources used for the city of San Francisco are from a very clean source, so very minimal modification is required to maintain acceptable qualities.  I am interested in data analysis after realizing how much data I currently produce at my current occupation.  
-    </p>
-    <p>
-    	I grew up in northern California and have spend a fair amount of time in western Massachusetts.  I attended Cal Poly in San Luis Obispo where gained a B.S. in Soil Science, focusing on Environmental Management.  My interests include motorsports, cooking, hiking and learning to code.
-    </p>
-  </section>
+<br>
 
- <section>
- 	<p><strong>My Social Media Links:</strong></p>
-  <ul>
-  	<li><a href="https://www.linkedin.com/in/michael-wallace-895a1745/">My LinkedIn</a></li>
-  </ul>
 
-  <table style="width:25%">
-  <tr>
-    <th>Movies</th>
-    <th>Songs</th> 
-    <th>Activities</th>
-  </tr>
-  <tr>
-    <td>Apocalpyse Now!</td>
-    <td>Anything Wu-Tang</td> 
-    <td>Cooking</td>
-  </tr>
-  <tr>
-    <td>The Matrix</td>
-    <td>RJD2</td> 
-    <td>Vintage Sports Cars</td>
-  </tr>
-</table>
+<body class="alert-secondary">
+<div class="container">
+  <div class ="row text-center">
+      <div class="col-lg-8 rounded img-fluid center-block">
+        <img src="CloudCover.png" alt="Cloud Cover" style="width:810px;height:540px;padding:15px">
+        <p class="text-left">Welcome to my website.  The main focus of this is to display some HTML/CSS skills utilizing the Bootstrap library of classes.  I am using some plots from a previous homework assignment for practice.  Data was gathered using OpenWeatherMap API which was fed a list of randomly generated cities produced by a module titled "citipy".  All plots that were produced utilizing the matplot.lib.</p>
+    </div>
+    <div class= "col-lg-1">
+    </div>
+    <div class = "col-sm-3 img-thumbnail rounded">
+      <img class="border-1" src="Humidity.png" alt="Humidity" style="max-width:100%;height:auto;padding:15px">
+      <img class="border-1" src="Temp.png" alt="Temperature" style="max-width:100%;height:auto;padding:15px">
+      <img class="border-1"  src="Wind.png" alt="Wind" style="max-width:100%;height:auto;padding:15px">
+    </div>
+  </div>   
+</div>
 
-</body>
-
-</section>
+  
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
 </html>
-
-
-
